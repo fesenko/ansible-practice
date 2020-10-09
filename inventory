@@ -1,0 +1,10 @@
+[web]
+node1 ansible_port=2022
+
+[db]
+node2 ansible_port=2023
+
+[all:vars]
+ansible_user=vagrant
+ansible_password=vagrant
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
